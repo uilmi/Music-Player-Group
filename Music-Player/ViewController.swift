@@ -59,7 +59,11 @@ class ViewController: UIViewController {
         
         // Check first music fave status
         if arrOfMusic[0].isFavorite! {
+<<<<<<< HEAD
              favMusicBtn.setImage(UIImage(systemName: "heart.circle.fill"), for: .normal)
+=======
+             favMusicBtn.setImage(UIImage(systemName: "suit.heart.fill"), for: .normal)
+>>>>>>> bba9cd2f4fd566f96bc3e1ec8eff4bbfd86cd530
         }
         
     }
@@ -127,9 +131,11 @@ class ViewController: UIViewController {
     
     func changeHeartIcon() {
         if arrOfMusic[currMusic].isFavorite! {
+
             favMusicBtn.setImage(UIImage(systemName: "heart.circle.fill"), for: .normal)
       } else {
         favMusicBtn.setImage(UIImage(systemName: "heart.circle"), for: .normal)
+
       }
     }
 
